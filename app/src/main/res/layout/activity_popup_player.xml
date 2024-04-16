@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopupPlayerActivity">
+
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/exoPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fixed_width"
+        app:surface_type="texture_view">
+
+
+        <ImageView
+            android:id="@+id/imgToggleOrientation"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="80dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:rotation="0"
+            android:rotationX="2"
+            android:rotationY="6"
+            app:srcCompat="@drawable/ic_rotation" />
+
+        <ImageView
+            android:id="@+id/imgLockUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/ic_lock_open" />
+
+        <ImageView
+            android:id="@+id/pipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="onPiPButtonClick"
+            android:paddingRight="2dp"
+            android:src="@drawable/ic_icon_pip" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-9163926251753325/1773121752"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.626"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.988">
+
+        </com.google.android.gms.ads.AdView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="761dp"
+            android:gravity="bottom|center">
+
+        </RelativeLayout>
+
+
+    </com.google.android.exoplayer2.ui.StyledPlayerView>
+
+
+</RelativeLayout>
+

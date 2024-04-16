@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_ad.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add your ad-related components here (e.g., AdView) -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/mAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        adSize="BANNER"
+        adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    <!-- Add more components as needed -->
+</LinearLayout>
+
+
